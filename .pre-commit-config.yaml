@@ -5,3 +5,10 @@ repos:
     hooks:
       - id: clang-format
         args: [--style=file, -i]
+  - repo: https://github.com/sbrunner/hooks
+    rev: faef5fb92013a6a60087a0d9f962a90fb898e8c5
+    hooks:
+      - id: copyright
+        name: update-copyright-line
+        args: [--config=.copyright-updater-config.yaml, --required]
+        types_or: ["c++", "cmake", "xml"]

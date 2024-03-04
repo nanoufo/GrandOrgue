@@ -1,0 +1,10 @@
+# config for copyright hook from https://github.com/sbrunner/hooks
+# --config option in .pre-commit-config.yaml points to this file
+
+# Is not actually used anywhere at the moment of writing this config
+one_date_re: ' (?P<year>\d+) GrandOrgue contributors \(see AUTHORS\)'
+one_date_format: ' Copyright {year} GrandOrgue contributors (see AUTHORS)'
+
+# Used a lot across codebase
+two_date_re: ' Copyright (?P<from>\d+)-(?P<to>\d+) GrandOrgue contributors \(see AUTHORS\)'
+two_date_format: ' Copyright {from}-{to} GrandOrgue contributors (see AUTHORS)'
