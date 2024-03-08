@@ -5,3 +5,11 @@ repos:
     hooks:
       - id: clang-format
         args: [--style=file, -i]
+  - repo: https://github.com/nanoufo/copyright-hook
+    rev: 54d4dab
+    hooks:
+      - id: update-copyright
+        name: update-copyright
+        args: [--required]
+        types_or: ["c++", "cmake"]
+ 
